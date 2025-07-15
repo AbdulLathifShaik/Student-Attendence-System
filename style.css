@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    min-height: 100vh;
+}
+
+ 
+ #attendanceForm{
+    height: 160px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+ }
+
+ input{
+    padding: 7px;
+    border-radius: 5px;
+    margin: 2px;
+ }
+ #name{
+    position: relative;
+    left: 2rem;
+ }
+ #email{
+    position: relative;
+    left: 2.8rem;
+ }
+ #datetime{
+    position: relative;
+    left: 1rem;
+ }
+
+.container {
+    max-width: 800px;
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 10%;
+}
+
+h2 {
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.card label {
+  font-weight: 500;
+  color: #4a148c;
+}
+
+input.form-control {
+  border: 1px solid #ba68c8;
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #8e24aa;
+  box-shadow: 0 0 5px rgba(142, 36, 170, 0.5);
+}
+
+button.btn-primary {
+  background-color: #aa76c1;
+  border: 0.5px solid black;
+  padding: 2px;
+  text-align: center;
+  border-radius: 0.5px;
+  transition: background 0.3s;
+}
+
+button.btn-primary:hover {
+  background-color: #c9b6e1;
+  color: black;
+  font-weight:bold;
+}
+
+button.btn-warning {
+  background-color: #ffa726;
+  border: none;
+}
+
+button.btn-warning:hover {
+  background-color: #fb8c00;
+}
+
+button.btn-danger {
+  background-color: #ef5350;
+  border: none;
+}
+
+button.btn-danger:hover {
+  background-color: #e53935;
+}
+
+.att{
+    display: flex;
+    justify-content: center;
+}
+h4{
+    text-align: center;
+}
+
+table {
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+  background-color: #bd80e3;
+  color: rgb(21, 17, 17);
+  text-align: center;
+  padding: 7px;
+}
+
+table td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

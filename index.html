@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Attendance System</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Smart Attendance System</h2>
+
+    <form id="attendanceForm" class="card p-4 shadow">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email ID:</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Date & Time: </label>
+        <input type="text" class="form-control" id="datetime" disabled />
+      </div>
+
+      <div class="mb-3">
+        <button type="button" class="btn btn-primary" onclick="addAttendance()">Mark Attendance</button>
+      </div>
+    </form>
+
+    <div class="att">
+        <div class="mt-5">
+      <h4>Attendance Records</h4>
+      <table class="table table-bordered table-striped mt-3">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date & Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceTableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
